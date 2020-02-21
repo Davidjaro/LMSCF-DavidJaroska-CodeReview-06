@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    color: #455359;
+    line-height: 1.3;
+    font-family: Arial,serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
+.row {
+    margin-right: 0 !important;
+}
+.infos{
+    border: #eff5fc 3px solid;
+}
+.infos div{
+    padding-left: 10px !important;
+}
+.outer {
+    padding: 0;
+    position: relative;
+    background-color: #eff5fc;
+    margin: 0 auto;
+}
+.img-left {
+    overflow: hidden;
+    max-width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-right {
+    overflow: hidden;
+    max-width: 40%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content {
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    margin: 0;
+}
+.inner {
+    margin: 0;
+    position: relative;
+}
+.provHeader {
+	line-height: 50px;
+	padding-top: 70px;
+	width: 40%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.inner img {
+    height: 300px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}
+.cities div {
+    margin-bottom: 70px;
+}
+#cards{
+    border: #eff5fc 1px solid;
+}
+.inner img {
+    padding-top: 30px;
+}
+.custom{
+    opacity: 0;
+}
+.text {
+    color: black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2;
+    opacity: 0;
+    position: relative;
+    background:
+    rgba(255, 255, 255, 0.95);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    font-size: 13px;
+    padding: 10px;
+}
+.text:hover {
+	opacity: 1;
+}
+@media (max-width: 770px){
+    .inner img{
+        display: none;
+    }
+    .text {
+        opacity: 1;
+    }
+    .provHeader{
+        width: 100%;
+        height: 100%;
+    }
+    .background{
+        opacity: 0.2;
+    }
+}
+@media (min-width: 770px) and (max-width: 992px){
+    .background{
+        opacity: 0.4;
+    }
+
+}
